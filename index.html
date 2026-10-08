@@ -318,15 +318,17 @@ section{padding:64px 0}
 </a>
 <nav id="nav">
 <ul>
-<li><a href="#home" class="active">Beranda</a></li>
-<li><a href="#tentang">Tentang</a></li>
-<li><a href="#layanan">Layanan</a></li>
-<li><a href="#organisasi">Organisasi</a></li>
-<li><a href="#mpp">MPP</a></li>
-<li><a href="#sistem">Sistem Kerja</a></li>
-<li><a href="#mutu">K3 &amp; Mutu</a></li>
-<li><a href="#nilai">Nilai Kami</a></li>
-<li><a href="#kontak">Kontak</a></li>
+  <li><a href="#home" class="active">Beranda</a></li>
+  <li><a href="#tentang">Tentang</a></li>
+  <li><a href="#layanan">Layanan</a></li>
+  <li><a href="#organisasi">Organisasi</a></li>
+  <li><a href="#mpp">MPP</a></li>
+  <li><a href="#proyek">Proyek</a></li>
+  <li><a href="#wps">WPS</a></li>
+  <li><a href="#sistem">Sistem Kerja</a></li>
+  <li><a href="#mutu">K3 &amp; Mutu</a></li>
+  <li><a href="#nilai">Nilai Kami</a></li>
+  <li><a href="#kontak">Kontak</a></li>
 </ul>
 </nav>
 <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -720,7 +722,203 @@ section{padding:64px 0}
 </div>
 </div> </div>
 </section>
+<!-- ===== WPS KLS ===== -->
+<style>
+.wps-note{background:#fff8e1;border:1px solid #f0d264;border-radius:12px;padding:18px 20px;font-size:.9rem;color:var(--ink)}
+.wps-fig{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.wps-fig img{width:100%;height:190px;object-fit:cover;display:block}
+.wps-fig figcaption{padding:10px 14px;font-size:.8rem;font-weight:600;color:var(--navy)}
+.wps-ph{height:190px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.82rem;background:var(--sky);text-align:center;padding:0 14px}
+.wps-sign{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:640px;margin:0 auto;text-align:center}
+.wps-sign .sign-name{display:inline-block;font-weight:700;color:var(--navy);border-bottom:2px solid var(--navy);padding:0 14px 4px;margin:44px 0 6px}
+@media(max-width:640px){.wps-sign{grid-template-columns:1fr;gap:36px}}
+</style>
+<section id="wps">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">Welding Procedure Specification</span>
+      <h2>WPS — SMAW Jinrui E7018</h2>
+      <p>Standard: AWS D1.1 / Structural Welding Code – Steel</p>
+      <div class="underline"></div>
+    </div>
 
+    <div class="proj-block reveal" style="margin-top:0">
+      <div class="tbl-wrap">
+        <table>
+          <tbody>
+            <tr><td class="k">WPS Number</td><td>WPS-SMAW-JINRUI-E7018-01</td><td class="k">Date</td><td>07 October 2026</td></tr>
+            <tr><td class="k">Welding Process</td><td>SMAW (1G through 4G)</td><td class="k">Type</td><td>Manual</td></tr>
+            <tr><td class="k">Company Name</td><td>CV. Karya Lancar Sejati</td><td class="k">Status</td><td>Controlled Copy · Internal KLS Only</td></tr>
+            <tr><td class="k">Supporting PQR</td><td>As applicable / Project Qualification</td><td class="k">Authorized By</td><td>Welding Engineer</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:16px;color:var(--muted);font-size:.92rem"><b style="color:var(--navy)">Document Control &amp; Scope:</b> WPS ini merinci parameter, geometri sambungan, spesifikasi material, dan kontrol operasional yang diperlukan untuk pengelasan Shielded Metal Arc Welding (SMAW) menggunakan elektroda Jinrui E7018 pada konstruksi carbon steel sesuai kode AWS D1.1.</p>
+    </div>
+
+    <div class="proj-block reveal">
+      <div class="proj-title">
+        <span class="ico"><svg width="24" height="24"><use href="#i-wrench"/></svg></span>
+        <div><h3>1. Joint Design &amp; Welding Sequence</h3></div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Joint Details &amp; Parameters</h3>
+          <ul class="check-list" style="margin-top:10px">
+            <li><svg width="17" height="17"><use href="#i-check-sm"/></svg><span><b>Joint Type:</b> Butt Joint / Single-V Groove</span></li>
+            <li><svg width="17" height="17"><use href="#i-check-sm"/></svg><span><b>Groove Angle:</b> 45° – 60°</span></li>
+            <li><svg width="17" height="17"><use href="#i-check-sm"/></svg><span><b>Root Opening:</b> 2.0 – 3.0 mm</span></li>
+            <li><svg width="17" height="17"><use href="#i-check-sm"/></svg><span><b>Root Face:</b> 1.0 – 2.0 mm</span></li>
+            <li><svg width="17" height="17"><use href="#i-check-sm"/></svg><span><b>Backing:</b> With or without backing</span></li>
+            <li><svg width="17" height="17"><use href="#i-check-sm"/></svg><span><b>Back Gouging:</b> Yes, when required</span></li>
+          </ul>
+        </div>
+        <div class="card" style="display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <h3 style="margin-bottom:12px">Groove Geometry &amp; Multi-Pass Sequencing</h3>
+          <svg viewBox="0 0 320 180" style="width:100%;max-width:320px" aria-hidden="true">
+            <rect x="0" y="45" width="115" height="90" fill="#cfe6f8" stroke="#2b5c8a" stroke-width="2"/>
+            <rect x="205" y="45" width="115" height="90" fill="#cfe6f8" stroke="#2b5c8a" stroke-width="2"/>
+            <path d="M115 45 L160 118 L205 45" fill="none" stroke="#2b5c8a" stroke-width="2"/>
+            <rect x="152" y="118" width="16" height="10" fill="#eaf3fb" stroke="#2b5c8a" stroke-width="2"/>
+            <circle cx="160" cy="105" r="9" fill="#8fc3ef" opacity=".85"/>
+            <circle cx="150" cy="92" r="10" fill="#a9d2f5" opacity=".85"/>
+            <circle cx="170" cy="92" r="10" fill="#a9d2f5" opacity=".85"/>
+            <circle cx="160" cy="78" r="11" fill="#cfe6f8" opacity=".9"/>
+            <circle cx="145" cy="65" r="11" fill="#dbeefc" opacity=".9"/>
+            <circle cx="175" cy="65" r="11" fill="#dbeefc" opacity=".9"/>
+            <circle cx="160" cy="52" r="12" fill="#eaf3fb" opacity=".95"/>
+            <path d="M115 30 A 60 60 0 0 1 205 30" fill="none" stroke="#1f6fb2" stroke-width="2" stroke-dasharray="4 4"/>
+            <text x="160" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#16436b">60°</text>
+            <line x1="45" y1="45" x2="45" y2="135" stroke="#16436b" stroke-width="1.5"/>
+            <path d="M45 45 l-4 8 h8 z" fill="#16436b"/><path d="M45 135 l-4 -8 h8 z" fill="#16436b"/>
+            <text x="34" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#16436b">20</text>
+            <text x="243" y="70" font-size="11" font-weight="700" fill="#16436b">1-2 mm</text>
+            <line x1="240" y1="66" x2="207" y2="52" stroke="#1f6fb2" stroke-width="1.2" stroke-dasharray="3 3"/>
+            <text x="243" y="140" font-size="11" font-weight="700" fill="#16436b">2-3 mm</text>
+            <line x1="240" y1="136" x2="170" y2="124" stroke="#1f6fb2" stroke-width="1.2" stroke-dasharray="3 3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-block reveal">
+      <div class="proj-title">
+        <span class="ico"><svg width="24" height="24"><use href="#i-chart"/></svg></span>
+        <div><h3>2. Welding Pass Parameters</h3></div>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Pass</th><th>Process</th><th>Filler Metal</th><th>Electrode Ø</th><th>Current/Polarity</th><th>Parameter</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Root / Pass 1</td><td>SMAW</td><td>Jinrui E7018</td><td>2.6 mm</td><td>DCEP</td><td>70-95A / 20-24 V</td></tr>
+            <tr><td class="k">Hot / Pass 2</td><td>SMAW</td><td>Jinrui E7018</td><td>3.2 mm</td><td>DCEP</td><td>90-130A / 22-26 V</td></tr>
+            <tr><td class="k">Fill / Multi-pass</td><td>SMAW</td><td>Jinrui E7018</td><td>3.2-4.0 mm</td><td>DCEP</td><td>110-170A / 24-28 V</td></tr>
+            <tr><td class="k">Capping / Final</td><td>SMAW</td><td>Jinrui E7018</td><td>3.2-4.0 mm</td><td>DCEP</td><td>100-150A / 22-27 V</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="proj-block reveal">
+      <div class="proj-title">
+        <span class="ico"><svg width="24" height="24"><use href="#i-clip"/></svg></span>
+        <div><h3>3. Base Metal &amp; Filler Metal Specifications</h3></div>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <tbody>
+            <tr><td class="k">Joint Type</td><td>Butt Joint / Groove Weld</td><td class="k">Welding Positions</td><td>1G, 2G, 3G, 4G</td></tr>
+            <tr><td class="k">Material Spec. / Grade</td><td>ASTM A36 / equivalent carbon steel</td><td class="k">Thickness Range</td><td>3.0 – 20.0 mm</td></tr>
+            <tr><td class="k">Backing</td><td>With or without backing</td><td class="k">Back Gouging</td><td>Yes, by grinding/chipping</td></tr>
+            <tr><td class="k">AWS Specification</td><td>AWS A5.1</td><td class="k">AWS Classification</td><td>E7018</td></tr>
+            <tr><td class="k">Electrode Brand</td><td>Jinrui</td><td class="k">F-Number / A-Number</td><td>F-4 / A-1</td></tr>
+            <tr><td class="k">Electrode Size</td><td>2.6, 3.2, 4.0 mm</td><td class="k">Polarity</td><td>DCEP (DC+)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="proj-block reveal">
+      <div class="proj-title">
+        <span class="ico"><svg width="24" height="24"><use href="#i-ship"/></svg></span>
+        <div><h3>4. Position, Preheat &amp; Postweld Heat Treatment</h3></div>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <tbody>
+            <tr><td class="k">Welding Positions</td><td>1G-Flat, 2G-Horizontal, 3G-Vertical, 4G-Overhead</td></tr>
+            <tr><td class="k">Progression (3G)</td><td>Vertical Upward (Mandatory for E7018 low-hydrogen)</td></tr>
+            <tr><td class="k">Preheat Temp. Min.</td><td>10°C or 50°C above dew point, whichever is higher</td></tr>
+            <tr><td class="k">Interpass Temp. Max.</td><td>250°C max</td></tr>
+            <tr><td class="k">Preheat Method</td><td>Gas torch / electrical heater as applicable</td></tr>
+            <tr><td class="k">Ambient Condition</td><td>Do not weld on wet/contaminated surfaces</td></tr>
+            <tr><td class="k">PWHT</td><td>N/A unless required by design/class</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="proj-block reveal">
+      <div class="proj-title">
+        <span class="ico"><svg width="24" height="24"><use href="#i-briefcase"/></svg></span>
+        <div><h3>5. Electrical Characteristics &amp; Technique</h3></div>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <tbody>
+            <tr><td class="k">Current Type</td><td>DCEP (DC+)</td><td class="k">Electrode Condition</td><td>Dry, clean, within manufacturer baking limits</td></tr>
+            <tr><td class="k">Transfer / Arc</td><td>Short to medium arc length</td><td class="k">Electrode Storage</td><td>Follow Jinrui instructions; keep dry</td></tr>
+            <tr><td class="k">Stringer / Weave</td><td>Stringer preferred; weave max 3x core</td><td class="k">Interpass Cleaning</td><td>Remove slag &amp; wire brush thoroughly</td></tr>
+            <tr><td class="k">Pass Type</td><td>Multi-pass</td><td class="k">Travel Speed</td><td>Adjust to maintain sound fusion/profile</td></tr>
+            <tr><td class="k">Visual Acceptance</td><td>No cracks, lack of fusion, excessive undercut</td><td class="k">Inspection</td><td>VT; NDT as specified by project/class</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="proj-block reveal">
+      <div class="proj-title">
+        <span class="ico"><svg width="24" height="24"><use href="#i-doc"/></svg></span>
+        <div><h3>6. Actual Workshop Welding &amp; Macro Inspection Photos</h3><span>Dokumentasi pelaksanaan las, setup mesin (Black Rhino DC-400), test plate, dan inspeksi macro-etch</span></div>
+      </div>
+      <div class="grid-2">
+        <figure class="wps-fig"><img src="wps-fig1.jpg" alt="Figure 1" loading="lazy" onerror="this.outerHTML='<div class=wps-ph>Foto belum diunggah — wps-fig1.jpg</div>'"><figcaption>Figure 1: Welder in Action (Shipyard Fabrication)</figcaption></figure>
+        <figure class="wps-fig"><img src="wps-fig2.jpg" alt="Figure 2" loading="lazy" onerror="this.outerHTML='<div class=wps-ph>Foto belum diunggah — wps-fig2.jpg</div>'"><figcaption>Figure 2: Completed Test Plate (JL E7018)</figcaption></figure>
+        <figure class="wps-fig"><img src="wps-fig3.jpg" alt="Figure 3" loading="lazy" onerror="this.outerHTML='<div class=wps-ph>Foto belum diunggah — wps-fig3.jpg</div>'"><figcaption>Figure 3: Black Rhino DC-400 Welding Machine</figcaption></figure>
+        <figure class="wps-fig"><img src="wps-fig4.jpg" alt="Figure 4" loading="lazy" onerror="this.outerHTML='<div class=wps-ph>Foto belum diunggah — wps-fig4.jpg</div>'"><figcaption>Figure 4: Macro-Etch Cross-Section Examination</figcaption></figure>
+        <figure class="wps-fig"><img src="wps-fig5.jpg" alt="Figure 5" loading="lazy" onerror="this.outerHTML='<div class=wps-ph>Foto belum diunggah — wps-fig5.jpg</div>'"><figcaption>Figure 5: Overhead Hull Welding Execution 4G</figcaption></figure>
+        <figure class="wps-fig"><img src="wps-fig6.jpg" alt="Figure 6" loading="lazy" onerror="this.outerHTML='<div class=wps-ph>Foto belum diunggah — wps-fig6.jpg</div>'"><figcaption>Figure 6: 3 Groove Position (3G)</figcaption></figure>
+        <figure class="wps-fig"><img src="wps-fig7.jpg" alt="Figure 7" loading="lazy" onerror="this.outerHTML='<div class=wps-ph>Foto belum diunggah — wps-fig7.jpg</div>'"><figcaption>Figure 7: Completed Test Plate (JL E7018)</figcaption></figure>
+        <figure class="wps-fig"><img src="wps-fig8.jpg" alt="Figure 8" loading="lazy" onerror="this.outerHTML='<div class=wps-ph>Foto belum diunggah — wps-fig8.jpg</div>'"><figcaption>Figure 8: 3 Groove Position (3G)</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="proj-block reveal">
+      <div class="proj-title">
+        <span class="ico"><svg width="24" height="24"><use href="#i-shield"/></svg></span>
+        <div><h3>7. Engineering Notes &amp; Compliance</h3></div>
+      </div>
+      <div class="wps-note"><b>NOTE:</b> WPS ini disusun sesuai requirement AWS D1.1 untuk structural welding of steel. Penerapan final mengikuti approved drawings, project specifications, applicable class requirements, dan qualified welding personnel. Penanganan elektroda mengikuti instruksi pabrikan Jinrui E7018.</div>
+    </div>
+
+    <div class="proj-block reveal">
+      <div class="card">
+        <div class="wps-sign">
+          <div>
+            <p style="font-size:.9rem"><b>Prepared By</b> — 07 October 2026</p>
+            <div class="sign-name">Andi Sophian Puta Bangun</div>
+            <p style="font-size:.88rem;color:var(--muted)">Deputy Head Operation</p>
+          </div>
+          <div>
+            <p style="font-size:.9rem"><b>Approved By</b> — 07 October 2026</p>
+            <div class="sign-name">Dede Ahmad Saefuddin</div>
+            <p style="font-size:.88rem;color:var(--muted)">Head Division</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- ===== SISTEM KERJA ===== -->
 <section id="sistem">
 <div class="container">
